@@ -42,7 +42,7 @@ async function getContent(bookId,chapterId){
   responseJson={
     success:true,content:c,title,id:chapterId
   }
-  console.log(responseJson)
+  // console.log(responseJson)
   console.info('[time:]',((new Date())-startTime)/1000+'s');
   await instance.exit();
   return responseJson;// 返回搜索结果 
