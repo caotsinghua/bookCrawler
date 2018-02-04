@@ -7,4 +7,7 @@ phantomjs就是一个没有界面的浏览器，获取到js运行之后的静态
 只写了搜索，获取书籍信息和目录，获取章节内容的接口。
 代码在bookCrawler文件夹中。
 
-添加一个rest服务，提供简单功能。
+api：
+- (get) http://book.tssword.xin/api/book//search?searchKey=关键词 搜索书籍
+- (get) http://book.tssword.xin/api/book//:bookId 获取书籍信息
+- (get) http://book.tssword.xin/api/book//:bookId/:chapterId 获取章节信息
